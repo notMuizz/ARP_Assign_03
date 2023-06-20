@@ -50,10 +50,17 @@ Then, you can run the program by executing:
 chmod +x run.src
 ./run.src
 ```
+At successful execution you will see:
+![Screenshot from 2023-06-20 02-30-36](https://github.com/notMuizz/ARP_Assign_03/assets/123844091/5587e10d-542d-4e5f-a221-6fd9c4bc57d4)
+
+
 
 ## User Interface 
 After compiling and running the program as mentioned above, it will ask the user to select the option in konsole. In case of selecting the *normal* mode, the behavior will be identical as in Assignment 2.
+![Screenshot from 2023-06-20 02-30-46](https://github.com/notMuizz/ARP_Assign_03/assets/123844091/1bef5381-6598-41e2-8c0a-372a64209bc8)
+
 
 However, if the user selects the *server* mode, the program will ask them to enter the IP address and the port number of the client they want to connect to  The server is now listening and waits for the client to connect. When that happens, the two ncurses windows will be displayed and the server becomes able to be commanded by the client, showing the current position of the circle in the first window and its trajectory in the second one.
+![Screenshot from 2023-06-20 02-30-57](https://github.com/notMuizz/ARP_Assign_03/assets/123844091/600a538f-7439-47d2-983b-c36c7eb4a62a)
 
 On the other hand, if the user selects the *client* mode, the program will ask them to enter the IP address and the port number of the server they want to connect to .Before running this mode, it is required that there is a server listening and waiting for the client to connect, otherwise, it will not be possible to establish the connection, terminating the program. 
